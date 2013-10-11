@@ -16,6 +16,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="135dp"
         android:layout_marginTop="47dp"
-        android:text="グラフ表示" />
+        android:text="グラフ表示aaaa" />
 
 </RelativeLayout>
