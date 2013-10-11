@@ -10,6 +10,7 @@ public class EfficiencyActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_efficiency);
+		//更新テスト
 	}
 
 	@Override
