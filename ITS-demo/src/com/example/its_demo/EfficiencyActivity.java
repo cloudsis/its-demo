@@ -11,6 +11,7 @@ public class EfficiencyActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_efficiency);
 		//更新テスト
+		//あいうえお
 	}
 
 	@Override
