@@ -23,19 +23,20 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements OnClickListener{
 	private IItsEcuService mECUServer; 
-	private Button btn1, btn2;
+	private Button btn1, btn2, btn3;
 	private Handler mCalledHandler = new Handler();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		setContentView(R.layout.activity_main);
 		btn1 = (Button)findViewById(R.id.button1); //ボタンの設定
 		btn2 = (Button)findViewById(R.id.button2); //ボタンの設定
+		btn3 = (Button)findViewById(R.id.button3); //ボタンの設定
 
 		btn1.setOnClickListener(this); //ボタンのリスナー設定
 		btn2.setOnClickListener(this); //ボタンのリスナー設定
+		btn3.setOnClickListener(this); //ボタンのリスナー設定
 		
 		//serviceのバインド
 		Intent intent = new Intent(IItsEcuService.class.getName());
@@ -119,22 +120,6 @@ public class MainActivity extends Activity implements OnClickListener{
 
 	};
 	
-	@Override
-	public void onClick(View v) {
-		// TODO 自動生成されたメソッド・スタブ
-		System.out.println("onClick");
-		switch(v.getId()) {
-		case R.id.button1:
-			System.out.println("button1");
-			register();
-			break;
-
-		case R.id.button2:
-			System.out.println("button2");
-			unregister();
-			break;
-		}	
-	}
 	
 	/**
 	 * リスナーの開始
@@ -163,6 +148,28 @@ public class MainActivity extends Activity implements OnClickListener{
 		} catch (RemoteException e) {
 			throw new RuntimeException(e);
 		} 
+	}
+	
+	@Override
+	public void onClick(View v) {
+		// TODO 自動生成されたメソッド・スタブ
+		System.out.println("onClick");
+		switch(v.getId()) {
+		case R.id.button1:
+			System.out.println("button1");
+			register();
+			break;
+
+		case R.id.button2:
+			System.out.println("button2");
+			unregister();
+			break;
+			
+		case R.id.button3:
+			Intent intent = new Intent(this, EfficiencyActivity.class);
+			startActivity(intent);
+			break;
+		}
 	}
 
 }

@@ -37,4 +37,13 @@
         android:paddingTop="0dp"
         android:text="運転終了" />
 
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="エコ運転" />
+
 </RelativeLayout>
