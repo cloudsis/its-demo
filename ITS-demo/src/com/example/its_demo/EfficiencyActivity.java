@@ -18,9 +18,11 @@ public class EfficiencyActivity extends Activity {
         // 初期化
 		ecoChartView = (EcoChartView)findViewById(R.id.eco_chart);
         // グラフに表示するデータを生成
-        int[] dataList = {10, 5, 20, 8};
-        // グラフを生成
-        ecoChartView.createChart(dataList);
+        //int[] dataList = {10, 5, 20, 8};
+        //ecoChartView.createChart(dataList);
+		double[] dataList = {12.2,13.4,20.0,10.5,25.5};
+		double avg = 18.6;
+	    ecoChartView.createEcoChart(dataList,avg);
 	}
 
 	@Override
