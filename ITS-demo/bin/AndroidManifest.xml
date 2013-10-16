@@ -28,6 +28,50 @@
             android:label="@string/title_activity_efficiency"
             android:screenOrientation="landscape" >
         </activity>
+        <activity
+            android:name="com.example.its_demo.DiagTopActivity"
+            android:label="@string/title_activity_diag_top" >
+        </activity>
+        <activity
+            android:name="com.example.its_demo.RankActivity"
+            android:label="@string/title_activity_rank" >
+        </activity>
+        <activity
+            android:name="com.example.its_demo.HistoryActivity"
+            android:label="@string/title_activity_history" >
+        </activity>
+        <activity
+            android:name="com.example.its_demo.PanelActivity"
+            android:label="@string/title_activity_panel" >
+        </activity>
+        <activity
+            android:name="com.example.its_demo.GyomuActivity"
+            android:label="@string/title_activity_gyomu" >
+        </activity>
+        <activity
+            android:name="com.example.its_demo.DiagnosisActivity"
+            android:label="@string/title_activity_diagnosis" >
+        </activity>
+        <activity
+            android:name="com.example.its_demo.GyomuMessageActivity"
+            android:label="@string/title_activity_gyomu_message" >
+        </activity>
+        <activity
+            android:name="com.example.its_demo.GyomuDestActivity"
+            android:label="@string/title_activity_gyomu_dest" >
+        </activity>
+        <activity
+            android:name="com.example.its_demo.GyomuMapActivity"
+            android:label="@string/title_activity_gyomu_map" >
+        </activity>
+        <activity
+            android:name="com.example.its_demo.GyomuHistoryActivity"
+            android:label="@string/title_activity_gyomu_history" >
+        </activity>
+        <activity
+            android:name="com.example.its_demo.GyomuSettingActivity"
+            android:label="@string/title_activity_gyomu_setting" >
+        </activity>
     </application>
 
 </manifest>

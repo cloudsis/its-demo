@@ -5,5 +5,16 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_efficiency">EfficiencyActivity</string>
+    <string name="title_activity_diag_top">DiagTopActivity</string>
+    <string name="title_activity_rank">RankActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_panel">PanelActivity</string>
+    <string name="title_activity_gyomu">GyomuActivity</string>
+    <string name="title_activity_diagnosis">DiagnosisActivity</string>
+    <string name="title_activity_gyomu_message">GyomuMessageActivity</string>
+    <string name="title_activity_gyomu_dest">GyomuDestActivity</string>
+    <string name="title_activity_gyomu_map">GyomuMapActivity</string>
+    <string name="title_activity_gyomu_history">GyomuHistoryActivity</string>
+    <string name="title_activity_gyomu_setting">GyomuSettingActivity</string>
 
 </resources>

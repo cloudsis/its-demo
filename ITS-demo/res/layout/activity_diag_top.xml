@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DiagTopActivity" >
+
+    <TextView
+        android:id="@+id/dtptextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="前回の燃費" />
+
+    <TextView
+        android:id="@+id/dtptextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-70dp"
+        android:layout_marginTop="70dp"
+        android:text="目標燃費" />
+
+    <Button
+        android:id="@+id/dtpbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="180dp"
+        android:text="診断開始" />
+
+    <EditText
+        android:id="@+id/dtpeditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-105dp"
+        android:layout_marginTop="30dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/dtpeditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-215dp"
+        android:layout_marginTop="120dp"
+        android:ems="10" />
+
+</LinearLayout>

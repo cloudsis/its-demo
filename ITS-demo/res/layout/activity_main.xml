@@ -1,49 +1,27 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:gravity="fill_horizontal"
     android:paddingBottom="0dp"
-    android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     tools:context=".MainActivity" >
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <Button
+        android:id="@+id/maibutton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleType="fitEnd"
-        android:src="@drawable/meter_eightsix" />
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:text="業務メニュー" />
 
     <Button
-        android:id="@+id/button1"
-        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/maibutton2"
         android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:paddingBottom="0dp"
-        android:paddingTop="0dp"
-        android:text="運転開始" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:text="エコ診断" />
 
-    <Button
-        android:id="@+id/button2"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_alignTop="@+id/button1"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@+id/button1"
-        android:paddingBottom="0dp"
-        android:paddingTop="0dp"
-        android:text="運転終了" />
-
-    <Button
-        android:id="@+id/button3"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:text="エコ運転" />
-
-</RelativeLayout>
+</LinearLayout>
