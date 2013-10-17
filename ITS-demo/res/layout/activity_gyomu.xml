@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,10 +7,87 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".GyomuActivity" >
+        
+    <LinearLayout
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        <Button
+            android:id="@+id/gymbutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="業務開始" />
 
-</RelativeLayout>
+    	<Button
+    	    android:id="@+id/gymbutton2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="現在地" />
+    	
+        <Button
+            android:id="@+id/gymbutton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="設定" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/gymbutton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="積込完了" />
+
+    	<Button
+    	    android:id="@+id/gymbutton4"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="目的地" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/gymbutton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="業務終了" />
+
+    	<Button
+    	    android:id="@+id/gymbutton6"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="履歴確認" />
+
+    </LinearLayout>
+    
+        <LinearLayout
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/gymbutton7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="配達完了" />
+
+    	<Button
+    	    android:id="@+id/gymbutton8"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:text="メッセージ受信" />
+
+    </LinearLayout>
+    
+</LinearLayout>

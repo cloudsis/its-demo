@@ -42,8 +42,32 @@
         android:id="@+id/dtpeditText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="-215dp"
+        android:layout_marginLeft="-210dp"
         android:layout_marginTop="120dp"
         android:ems="10" />
+
+    <Button
+        android:id="@+id/dtpbutton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="90dp"
+        android:text="ランキング" />
+
+    <Button
+        android:id="@+id/dtpbutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-114dp"
+        android:layout_marginTop="20dp"
+        android:text="履歴" />
+
+    <Button
+        android:id="@+id/dtpbutton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-65dp"
+        android:layout_marginTop="160dp"
+        android:text="インパネ" />
 
 </LinearLayout>
