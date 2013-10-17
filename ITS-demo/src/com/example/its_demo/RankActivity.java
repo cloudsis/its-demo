@@ -3,6 +3,8 @@ package com.example.its_demo;
 import java.util.ArrayList;
 import java.util.List;
 
+import jp.co.seino.sis.util.ActivityUtil;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -25,7 +27,9 @@ public class RankActivity extends Activity implements OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_rank);
+		//タイトル表示
+		ActivityUtil.initTitleBarEco(R.layout.activity_rank, R.string.title_activity_rank, this);
+		//setContentView(R.layout.activity_rank);
 		btn1 = (Button)findViewById(R.id.rnkbutton1); //ボタンの設定
 		lv = (ListView)findViewById(R.id.rnklistView1); //リストビューの設定
 		

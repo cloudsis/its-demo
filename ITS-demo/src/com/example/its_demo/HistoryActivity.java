@@ -1,5 +1,6 @@
 package com.example.its_demo;
 
+import jp.co.seino.sis.util.ActivityUtil;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -21,7 +22,9 @@ public class HistoryActivity extends Activity implements OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_history);
+		//タイトル表示
+		ActivityUtil.initTitleBarEco(R.layout.activity_history, R.string.title_activity_history, this);
+		//setContentView(R.layout.activity_history);
 		btn1 = (Button)findViewById(R.id.hstbutton1); //ボタンの設定
 		lv = (ListView)findViewById(R.id.hstlistView1); //リストビューの設定
 		

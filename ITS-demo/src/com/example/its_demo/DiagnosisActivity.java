@@ -4,6 +4,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import jp.co.seino.sis.chart.EcoChartView;
+import jp.co.seino.sis.util.ActivityUtil;
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
@@ -18,9 +19,8 @@ public class DiagnosisActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_diagnosis);
-		//更新テスト
-		//あいうえお
+		//タイトル表示
+		ActivityUtil.initTitleBarEco(R.layout.activity_diagnosis, R.string.title_activity_diagnosis, this);
         // 初期化
 		ecoChartView = (EcoChartView)findViewById(R.id.diaChartView);
         // グラフに表示するデータを生成

@@ -1,5 +1,6 @@
 package com.example.its_demo;
 
+import jp.co.seino.sis.util.ActivityUtil;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -14,7 +15,9 @@ public class PanelActivity extends Activity implements OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_panel);
+		//タイトル表示
+		ActivityUtil.initTitleBarEco(R.layout.activity_panel, R.string.title_activity_panel, this);
+		//setContentView(R.layout.activity_panel);
 		btn1 = (Button)findViewById(R.id.pnlbutton1); //ボタンの設定
 
 		btn1.setOnClickListener(this); //ボタンのリスナー設定

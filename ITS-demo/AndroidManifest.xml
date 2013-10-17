@@ -25,24 +25,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.its_demo.EfficiencyActivity"
-            android:label="@string/title_activity_efficiency"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
             android:name="com.example.its_demo.DiagTopActivity"
+			android:theme="@style/BlankTheme"
             android:label="@string/title_activity_diag_top" >
         </activity>
         <activity
             android:name="com.example.its_demo.RankActivity"
+			android:theme="@style/BlankTheme"
             android:label="@string/title_activity_rank" >
         </activity>
         <activity
             android:name="com.example.its_demo.HistoryActivity"
+			android:theme="@style/BlankTheme"
             android:label="@string/title_activity_history" >
         </activity>
         <activity
             android:name="com.example.its_demo.PanelActivity"
+			android:theme="@style/BlankTheme"
             android:label="@string/title_activity_panel" >
         </activity>
         <activity
@@ -51,6 +50,7 @@
         </activity>
         <activity
             android:name="com.example.its_demo.DiagnosisActivity"
+			android:theme="@style/BlankTheme"
             android:label="@string/title_activity_diagnosis" >
         </activity>
         <activity

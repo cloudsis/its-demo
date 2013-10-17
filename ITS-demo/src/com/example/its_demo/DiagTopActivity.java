@@ -1,5 +1,6 @@
 package com.example.its_demo;
 
+import jp.co.seino.sis.util.ActivityUtil;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -14,7 +15,9 @@ public class DiagTopActivity extends Activity implements OnClickListener{
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_diag_top);
+		//タイトル表示
+		ActivityUtil.initTitleBarEco(R.layout.activity_diag_top, R.string.title_activity_diag_top, this);
+		//setContentView(R.layout.activity_diag_top);
 		btn1 = (Button)findViewById(R.id.dtpbutton1); //ボタンの設定
 		btn2 = (Button)findViewById(R.id.dtpbutton2); //ボタンの設定
 		btn3 = (Button)findViewById(R.id.dtpbutton3); //ボタンの設定
@@ -26,12 +29,12 @@ public class DiagTopActivity extends Activity implements OnClickListener{
 		btn4.setOnClickListener(this); //ボタンのリスナー設定
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.diag_top, menu);
-		return true;
-	}
+//	@Override
+//	public boolean onCreateOptionsMenu(Menu menu) {
+//		// Inflate the menu; this adds items to the action bar if it is present.
+//		getMenuInflater().inflate(R.menu.diag_top, menu);
+//		return true;
+//	}
 
 	@Override //ボタンが押されたときの動作
 	public void onClick(View v) {

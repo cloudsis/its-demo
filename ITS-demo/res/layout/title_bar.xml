@@ -5,7 +5,7 @@
     >
 
     <TextView
-        android:id="@+id/left_title_text"
+        android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:text="タイトル" />
