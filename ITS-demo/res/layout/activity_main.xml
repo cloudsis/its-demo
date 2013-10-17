@@ -2,12 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@android:color/white"
     android:gravity="fill_horizontal"
     android:paddingBottom="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     tools:context=".MainActivity" >
 
+    <!-- 
     <Button
         android:id="@+id/maibutton1"
         android:layout_width="wrap_content"
@@ -23,5 +25,6 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="100dp"
         android:text="エコ診断" />
+     -->
 
 </LinearLayout>

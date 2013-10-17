@@ -16,5 +16,8 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    <style parent="android:Theme.Light" name="BlankTheme">
+		<item name="android:windowTitleSize">40dip</item>
+    </style>
 
 </resources>
