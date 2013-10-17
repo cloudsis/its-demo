@@ -3,11 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
     tools:context=".GyomuHistoryActivity" >
 
+        <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ghstextView1"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:text="走行履歴"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ListView
+            android:id="@+id/ghslistView1"
+            android:layout_width="450dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="19dp" >
+
+        </ListView>
+    </LinearLayout>
+    
     <Button
         android:id="@+id/ghsbutton1"
         android:layout_width="wrap_content"
