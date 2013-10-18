@@ -1,5 +1,6 @@
 package com.example.its_demo;
 
+import jp.co.seino.sis.util.ActivityUtil;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -14,7 +15,10 @@ public class GyomuActivity extends Activity implements OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_gyomu);
+		//setContentView(R.layout.activity_gyomu);
+		//タイトル表示
+		ActivityUtil.initTitleBarGyomu(R.layout.activity_gyomu, R.string.title_activity_gyomu, this);
+
 		btn1 = (Button)findViewById(R.id.gymbutton1); //ボタンの設定
 		btn2 = (Button)findViewById(R.id.gymbutton2); //ボタンの設定
 		btn3 = (Button)findViewById(R.id.gymbutton3); //ボタンの設定

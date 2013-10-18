@@ -1,5 +1,15 @@
 package com.example.its_demo;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+
 import jp.co.seino.sis.util.ActivityUtil;
 import android.os.Bundle;
 import android.app.Activity;
@@ -15,9 +25,12 @@ import android.widget.ListView;
 public class HistoryActivity extends Activity implements OnClickListener {
 	private Button btn1;
 	private ListView lv;
-	private String[] dataList = {"201310171412 12.7 87", "201310150948 10.5 78"};
+	private ArrayList<String> dateList = new ArrayList<String>();
+	private ArrayList<String> fullList = new ArrayList<String>();
 	private String item;
 	private ArrayAdapter<String> adapter;
+	private SimpleDateFormat DATE_FORMAT1 = new SimpleDateFormat("yyyyMMddkkmm"); //24時間表示はhhではなくkkを使う
+	private SimpleDateFormat DATE_FORMAT2 = new SimpleDateFormat("yyyy'年'MM'月'dd'日'kk'時'mm'分'");
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +71,7 @@ public class HistoryActivity extends Activity implements OnClickListener {
 				ListView listView = (ListView) parent;
                 item = (String) listView.getItemAtPosition(position);
     			Intent intent1 = new Intent(HistoryActivity.this, DiagnosisActivity.class);
-    			intent1.putExtra("hist", item);
+    			intent1.putExtra("hist", dateList.get((int) id)); //日付を診断画面に渡す
     			startActivity(intent1);
                 System.out.println(item);
 			}
@@ -85,12 +98,41 @@ public class HistoryActivity extends Activity implements OnClickListener {
 	}
 	
 	public void setAdapters(){ //リスト表示
-		setData();
-		adapter = new ArrayAdapter<String>(
-			      this, 
-			      android.R.layout.simple_expandable_list_item_1, 
-			      dataList);
-		lv.setAdapter(adapter);
+		// ファイル読み込み
+	      try {
+	          FileInputStream fis;
+				fis = openFileInput("history.txt");
+				InputStreamReader isr = new InputStreamReader(fis);
+				BufferedReader br = new BufferedReader(isr);
+				
+	          String str;
+	          String[] spl;
+	          Date dat;
+		        str = br.readLine();
+		        while(str != null){
+		        	spl = str.split(",");
+		        	dat = DATE_FORMAT1.parse(spl[0]);
+		        	dateList.add(DATE_FORMAT2.format(dat)); //日付
+		        	fullList.add(DATE_FORMAT2.format(dat) + "\r\n燃費:" + spl[1] + "  点数:" + spl[2]); //リスト表示用	        		
+
+		        	str = br.readLine();
+		        }
+	      } catch (FileNotFoundException e){
+				// TODO 自動生成された catch ブロック
+				e.printStackTrace();        	
+	      }      catch (IOException e) {
+				// TODO 自動生成された catch ブロック
+				e.printStackTrace();
+			} catch (ParseException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+	      
+			adapter = new ArrayAdapter<String>(
+				      this,
+				      android.R.layout.simple_expandable_list_item_1,
+				      fullList);
+			lv.setAdapter(adapter);
 	}
 	
 	public void setData(){ //リスト表示するデータをセット

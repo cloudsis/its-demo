@@ -15,19 +15,19 @@
 
         <Button
             android:id="@+id/gymbutton1"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="業務開始" />
 
     	<Button
     	    android:id="@+id/gymbutton2"
-    	    android:layout_width="wrap_content"
+    	    android:layout_width="fill_parent"
     	    android:layout_height="wrap_content"
     	    android:text="現在地" />
     	
         <Button
             android:id="@+id/gymbutton9"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="設定" />
 
@@ -40,13 +40,13 @@
 
         <Button
             android:id="@+id/gymbutton3"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="積込完了" />
 
     	<Button
     	    android:id="@+id/gymbutton4"
-    	    android:layout_width="wrap_content"
+    	    android:layout_width="fill_parent"
     	    android:layout_height="wrap_content"
     	    android:text="目的地" />
 
@@ -59,13 +59,13 @@
 
         <Button
             android:id="@+id/gymbutton5"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="業務終了" />
 
     	<Button
     	    android:id="@+id/gymbutton6"
-    	    android:layout_width="wrap_content"
+    	    android:layout_width="fill_parent"
     	    android:layout_height="wrap_content"
     	    android:text="履歴確認" />
 

@@ -8,20 +8,20 @@
     tools:context=".GyomuDestActivity" >
 
         <LinearLayout
-        android:layout_width="450dp"
+        android:layout_width="540dp"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
         <TextView
             android:id="@+id/gdttextView1"
-            android:layout_width="450dp"
+            android:layout_width="510dp"
             android:layout_height="wrap_content"
             android:text="目的地一覧"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <ListView
             android:id="@+id/gdtlistView1"
-            android:layout_width="450dp"
+            android:layout_width="510dp"
             android:layout_height="210dp"
             android:layout_marginTop="19dp" >
         </ListView>
@@ -29,8 +29,10 @@
     
     <Button
         android:id="@+id/gdtbutton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
         android:text="戻る" />
 
 </LinearLayout>

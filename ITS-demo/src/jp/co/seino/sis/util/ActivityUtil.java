@@ -37,14 +37,16 @@ public class ActivityUtil {
 	    titleText.setText(title);
 	    //ボタンの設定
 		final Activity act = activity;
+	    Button btn1 = (Button)activity.findViewById(R.id.titleGyomuBtn); //ボタンの設定
 		if (menu != R.string.title_gyomu) {
-		    Button btn1 = (Button)activity.findViewById(R.id.titleGyomuBtn); //ボタンの設定
 			btn1.setOnClickListener(new OnClickListener(){ 
 				public void onClick(View v){
 					Intent intent = new Intent(act, GyomuActivity.class);
 					act.startActivity(intent);
 				} 
 			}); //ボタンのリスナー設定
+		} else {
+			btn1.setEnabled(false);//ボタン無効
 		}
 	    Button btn2 = (Button)activity.findViewById(R.id.titleEcoBtn); //ボタンの設定
 		if (menu != R.string.title_eco) {
