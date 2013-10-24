@@ -60,6 +60,7 @@
         </activity>
         <activity
             android:name="com.example.its_demo.GyomuDestActivity"
+           	android:theme="@style/BlankTheme"
             android:label="@string/title_activity_gyomu_dest" >
         </activity>
         <activity
